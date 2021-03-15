@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:almentor"
+             x:Class="almentor.Views.MoreInfo">
+    <ContentPage.Content>
+    
+            <Grid Background="#141717" >
+                <Grid.RowDefinitions>
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.25*" />
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.10*"/>
+                <RowDefinition Height="0.12*"/>
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.10*" />
+                </Grid.RowDefinitions>
+
+            <Label    Grid.Row="1" Text ="Tell us more about you" FontSize="24" FontAttributes="None"
+                            TextColor="#eeeeee" HorizontalOptions="Center" VerticalOptions="Center" Margin="42,0,42,0" />
+            
+            <!--<Image    Grid.Row="2" Grid.RowSpan="3"  Source="verifyyouremail.png" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="23.1,1.2,23.1,0"/>-->
+            <Label    Grid.Row="2"  Text ="Location" FontSize="16" FontAttributes="None"
+                            TextColor="#d4d4d4" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="10,0,10,0"/>
+            <Grid Grid.Row="3" Margin="10,0,10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.50*"/>
+                    <ColumnDefinition Width="0.50*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Text="Country" TextColor="#b0b0b0" BackgroundColor="#252a2a"  FontSize="16" HorizontalTextAlignment="Start" Padding="10,0,0,0"/>
+                <Picker   Grid.Column="0" BackgroundColor="Transparent" TextColor="#b0b0b0"  />
+                <Label Grid.Column="1" Text="City" TextColor="#b0b0b0" BackgroundColor="#252a2a"  FontSize="16" HorizontalTextAlignment="Start" Padding="10,0,0,0"/>
+                <Picker   Grid.Column="1" BackgroundColor="Transparent" TextColor="#b0b0b0"  />
+            </Grid>
+
+            <Label    Grid.Row="4"  Text ="Phone" FontSize="16" FontAttributes="None"
+                            TextColor="#d4d4d4" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="10,0,10,0"/>
+            <Entry  Grid.Row="5" x:Name="entry_phone"  Placeholder="10 0000 0000"  Keyboard="Telephone"  PlaceholderColor="#b0b0b0"  TextColor="#b0b0b0" BackgroundColor="#252a2a"  Margin="10,0,10,0" HorizontalOptions="FillAndExpand" 
+                             VerticalOptions="Start" >
+                <Entry.PlaceholderColor>
+                    <OnPlatform x:TypeArguments="Color">
+                        <On Platform="iOS" Value="#b0b0b0"></On>
+                        <On Platform="Android" Value="#b0b0b0"></On>
+                    </OnPlatform>
+                </Entry.PlaceholderColor>
+            </Entry>
+            <Label    Grid.Row="6"  Text ="Gender" FontSize="16" FontAttributes="None"
+                            TextColor="#d4d4d4" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="10,0,10,0"/>
+            <Grid Grid.Row="7" Margin="10,0,10,0" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.50*"/>
+                    <ColumnDefinition Width="0.50*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" BackgroundColor="#252a2a"  Text="Male" TextColor="#ff907e" BorderColor="#ff907e"  BorderWidth="0.5"/>
+                <Button Grid.Column="1" BackgroundColor="#252a2a"  Text="Female" TextColor="#ff907e" BorderColor="#ff907e"  BorderWidth="0.5" />
+            </Grid>
+            <Label    Grid.Row="8"  Text ="Date of Birth" FontSize="16" FontAttributes="None"
+                            TextColor="#d4d4d4" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="10,0,10,0"/>
+            <Grid Grid.Row="9" Margin="10,0,10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*"/>
+                    <ColumnDefinition Width="0.33*"/>
+                    <ColumnDefinition Width="0.33*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Text="Day" TextColor="#b0b0b0" BackgroundColor="#252a2a"  FontSize="16" HorizontalTextAlignment="Start" Padding="10,0,0,0"/> 
+                <Picker   Grid.Column="0" BackgroundColor="Transparent" TextColor="#b0b0b0"  />
+                <Label Grid.Column="1" Text="Month" TextColor="#b0b0b0" BackgroundColor="#252a2a"  FontSize="16" HorizontalTextAlignment="Start" Padding="10,0,0,0"/>
+                <Picker Grid.Column="1" BackgroundColor="#Transparent" TextColor="#b0b0b0" />
+                <Label Grid.Column="2" Text="Year" TextColor="#b0b0b0" BackgroundColor="#252a2a"  FontSize="16" HorizontalTextAlignment="Start" Padding="10,0,0,0"/>
+                <Picker Grid.Column="2" BackgroundColor="#Transparent" TextColor="#b0b0b0" />
+            </Grid>
+
+            <Button Grid.Row="11" Text="Next"  TextColor="#eeeeee" BackgroundColor="#eb2027" CornerRadius="5" Margin="10,0,10,0" Clicked="Button_Clicked_1"/>
+            <Label    Grid.Row="12" Text ="Skip" FontSize="12" FontAttributes="None" TextDecorations="Underline"
+                            TextColor="#0a8db1" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+
+            <!--<Entry x:Name="entry_name" Grid.Row="3" Placeholder="Name"  Keyboard="Text"  PlaceholderColor="#b0b0b0"  TextColor="#b0b0b0" BackgroundColor="#252a2a"  Margin="10,0,10,0" HorizontalOptions="FillAndExpand" 
+                             VerticalOptions="Start" >
+                <Entry.PlaceholderColor>
+                    <OnPlatform x:TypeArguments="Color">
+                        <On Platform="iOS" Value="#b0b0b0"></On>
+                        <On Platform="Android" Value="#b0b0b0"></On>
+                    </OnPlatform>
+                </Entry.PlaceholderColor>
+            </Entry>
+            <Entry x:Name="entry_email" Grid.Row="4" Placeholder="Email"  Keyboard="Email" PlaceholderColor="#b0b0b0"  TextColor="#b0b0b0" BackgroundColor="#252a2a"  Margin="10,0,10,0" HorizontalOptions="FillAndExpand"
+                             VerticalOptions="Start" >
+                <Entry.PlaceholderColor>
+                    <OnPlatform x:TypeArguments="Color">
+                        <On Platform="iOS" Value="#b0b0b0"></On>
+                        <On Platform="Android" Value="#b0b0b0"></On>
+                    </OnPlatform>
+                </Entry.PlaceholderColor>
+            </Entry>
+            <Entry x:Name="entry_passwort_login" Grid.Row="5"    IsPassword="True" Keyboard="Numeric" Placeholder="Password" PlaceholderColor="#b0b0b0" TextColor="#b0b0b0" BackgroundColor="#252a2a" Margin="10,0,10,0" HorizontalOptions="FillAndExpand"
+                             VerticalOptions="Start" >
+                <Entry.PlaceholderColor>
+                    <OnPlatform x:TypeArguments="Color">
+                        <On Platform="iOS" Value="#b0b0b0"></On>
+                        <On Platform="Android" Value="#b0b0b0"></On>
+                    </OnPlatform>
+                </Entry.PlaceholderColor>
+            </Entry>
+
+            <Grid Grid.Row="6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.10*"/>
+                    <RowDefinition Height="0.80*"/>
+                    <RowDefinition Height="0.10*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    -->
+                <!--<ColumnDefinition Width="0.05*" />-->
+                <!--
+                    <ColumnDefinition Width="0.08*" />
+                    <ColumnDefinition Width="0.90*" />
+
+                </Grid.ColumnDefinitions>
+                <CheckBox Grid.Row="1"   Grid.Column="0" Color="#d4d4d4"  
+                          VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label    Grid.Row="1" Grid.Column="1" Text ="Receive offers and deals on your email" FontSize="12" FontAttributes="None"
+                            TextColor="#a1a1a1" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"  />
+            </Grid>
+            <Button Grid.Row="7" Text="Sign up" TextColor="#eeeeee" BackgroundColor="#eb2027" 
+                            CornerRadius="5" Margin="10,0,10,0" Clicked="Button_Clicked"/>
+            -->
+                <!--<Label    Grid.Row="8" Text ="Forgot your password?" FontSize="12" FontAttributes="None"
+                            TextColor="#0a8db1" HorizontalOptions="Center" VerticalOptions="Center"/>-->
+                <!--
+                <Label   Grid.Row="8" 
+                     BackgroundColor="#252a2a" 
+                     HeightRequest="1"
+                     HorizontalOptions="FillAndExpand" 
+                     VerticalOptions="Center"
+                    Margin="10,0,10,0" />
+
+                <Grid Grid.Row="9">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.50*" />
+                        <ColumnDefinition Width="0.35*" />
+                    </Grid.ColumnDefinitions>
+                    <Label   Grid.Column="0" Text ="Didn't receive the email?" FontSize="16" FontAttributes="None"
+                       TextColor="#d4d4d4" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+
+                    <Button  Grid.Column="1"  Text="Resend email" TextColor="#0a8db1" BackgroundColor="Transparent" Margin="10,5,10,5" Clicked="Button_Clicked" 
+                         HorizontalOptions="StartAndExpand"  VerticalOptions="Center"/>
+                </Grid>-->
+            </Grid>
+        </ContentPage.Content>
+</ContentPage>

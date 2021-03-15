@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--<configuration>
+    --><!-- https://go.microsoft.com/fwlink/?linkid=2124038
+    <issue id="HardcodedText" severity="error">
+        <ignore path="Resources\layout\content_main.xml" />
+    </issue>
+    --><!--
+</configuration>-->
+<!--    <layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:ignore="RequiredSizeHeight"
+    android:orientation="vertical">
+    <item
+        android:layout_width="match_parent">
+        <color
+            android:color="@color/splash_background"
+            android:layout_width="match_parent" />
+    </item>
+    <item
+        android:layout_width="match_parent">
+        <bitmap
+            android:src="@drawable/almentoricon"
+            android:tileMode="disabled"
+            android:gravity="center"
+            android:layout_width="match_parent" />
+    </item>
+</layer-list>-->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:minWidth="25px"
+	android:minHeight="25px"
+	android:background="@drawable/almentoricon"
+	android:gravity="center_vertical">
+	</LinearLayout>

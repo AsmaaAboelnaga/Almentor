@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="almentor.Views.Interests">
+    <ContentPage.Content>
+        <Grid Background="#141717" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.09*" />
+                <RowDefinition Height="0.09*" />
+                <RowDefinition Height="0.09*" />
+                <RowDefinition Height="0.12*"/>
+                <RowDefinition Height="0.12*"/>
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.05*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.10*" />
+            </Grid.RowDefinitions>
+            <Label    Grid.Row="1" Text ="What are your interests?" FontSize="24" FontAttributes="None"
+                            TextColor="#eeeeee" HorizontalOptions="Center" VerticalOptions="Center" Margin="42,0,42,0" />
+            <Label    Grid.Row="2" Text ="Access you existing account" FontSize="16" FontAttributes="None"
+                            TextColor="#a1a1a1" HorizontalOptions="Center" VerticalOptions="Center" />
+            <!-- <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.50*" />
+                    <RowDefinition Height="0.50*" />
+                </Grid.RowDefinitions>
+                <Label    Grid.Row="0" Text ="What are your interests?" FontSize="24" FontAttributes="None"
+                            TextColor="#eeeeee" HorizontalOptions="Center" VerticalOptions="Center" Margin="42,0,42,0" />
+                <Label    Grid.Row="1" Text ="Access you existing account" FontSize="16" FontAttributes="None"
+                            TextColor="#a1a1a1" HorizontalOptions="Center" VerticalOptions="Center" Margin="23.1,1.2,23.1,0"/>
+            </Grid>-->
+            <!--<Image    Grid.Row="2" Grid.RowSpan="3"  Source="verifyyouremail.png" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="23.1,1.2,23.1,0"/>-->
+            <Label    Grid.Row="3"  Text ="*You can pick more than one" FontSize="12" FontAttributes="None"
+                            TextColor="#85cddc" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="10,0,10,0"/>
+            <!--<ListView Grid.Row="4"Grid.RowSpan="6">-->
+            <!--<ScrollView Grid.Row="3" Grid.RowSpan="11">-->
+            
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.40*" />
+                    <ColumnDefinition Width="0.15*" />
+                    <ColumnDefinition Width="0.15*" />
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Text="Digital Marketing" TextColor="#d4d4d4"  FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a" Margin="10,0,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+                <Button Grid.Row="0" Grid.Column="1" Text="Sales" TextColor="#d4d4d4" FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a"   Margin="0,0,0,0" />
+                <Button Grid.Row="0" Grid.Column="2" Text="Arts" TextColor="#d4d4d4" FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a"   Margin="0,0,10,0" />
+            </Grid>
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.20*" />
+                    <ColumnDefinition Width="0.15*" />
+                    <ColumnDefinition Width="0.15*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Text="Filmmaking" TextColor="#d4d4d4"  FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a" Margin="10,0,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+                <Button Grid.Row="0" Grid.Column="1" Text="Marketing" TextColor="#d4d4d4" FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a"   Margin="0,0,0,0" />
+                <Button Grid.Row="0" Grid.Column="2" Text="Coding" TextColor="#d4d4d4" FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a"   Margin="0,0,10,0" />
+            </Grid>
+            <Grid Grid.Row="6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.20*" />
+                    <ColumnDefinition Width="0.15*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Text="Graphic Design" TextColor="#d4d4d4"  FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a" Margin="10,0,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+                <Button Grid.Row="0" Grid.Column="1" Text="Soft Skills" TextColor="#d4d4d4" FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a"   Margin="0,0,10,0" />
+            </Grid>
+            <Grid Grid.Row="7">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.50*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Text="Parenting" TextColor="#d4d4d4"  FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a" Margin="10,0,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+                <Button Grid.Row="0" Grid.Column="1" Text="Software Development" TextColor="#0c0e0e" FontSize=" 14" CornerRadius="20" BackgroundColor="#ff907e"   Margin="0,0,10,0" />
+            </Grid>
+            <Grid Grid.Row="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.20*" />
+                    <ColumnDefinition Width="0.15*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Text="Testing  Automation" TextColor="#0c0e0e"  FontSize=" 14" CornerRadius="20" BackgroundColor="#ff907e" Margin="10,0,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+                <Button Grid.Row="0" Grid.Column="1" Text="Life Coaching" TextColor="#d4d4d4" FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a"   Margin="0,0,10,0" />
+            </Grid>
+            <Grid Grid.Row="9">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.30*" />
+                    <ColumnDefinition Width="0.25*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Text="Media" TextColor="#d4d4d4"  FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a" Margin="10,0,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+                <Button Grid.Row="0" Grid.Column="1" Text="Management" TextColor="#d4d4d4" FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a"   Margin="0,0,0,0" />
+                <Button Grid.Row="0" Grid.Column="2" Text="Lifestyle" TextColor="#d4d4d4" FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a"   Margin="0,0,10,0" />
+            </Grid>
+            <Grid Grid.Row="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.15*" />
+                    <ColumnDefinition Width="0.30*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Text="Business" TextColor="#d4d4d4"  FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a" Margin="10,0,0,0" HorizontalOptions="Start" VerticalOptions="Center" />
+                <Button Grid.Row="0" Grid.Column="1" Text="Health &amp; Fitness" TextColor="#d4d4d4" FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a"   Margin="0,0,10,0" />
+            </Grid>
+            <Grid Grid.Row="11">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.30*" />
+                    <ColumnDefinition Width="0.30*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Text="Humanities" TextColor="#d4d4d4"  FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a" Margin="10,0,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+                <Button Grid.Row="0" Grid.Column="1" Text="Entrepreneurship" TextColor="#d4d4d4" FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a"   Margin="0,0,10,0" />
+            </Grid>
+         
+            <!--</ScrollView>-->
+            <!--<Grid Grid.Row="3" Margin="10,0,10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.50*"/>
+                    <ColumnDefinition Width="0.50*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Text="Country" TextColor="#b0b0b0" BackgroundColor="#252a2a"  FontSize="16" HorizontalTextAlignment="Start" Padding="10,0,0,0"/>
+                <Picker   Grid.Column="0" BackgroundColor="Transparent" TextColor="#b0b0b0"  />
+                <Label Grid.Column="1" Text="City" TextColor="#b0b0b0" BackgroundColor="#252a2a"  FontSize="16" HorizontalTextAlignment="Start" Padding="10,0,0,0"/>
+                <Picker   Grid.Column="1" BackgroundColor="Transparent" TextColor="#b0b0b0"  />
+            </Grid>
+
+            <Label    Grid.Row="4"  Text ="Phone" FontSize="16" FontAttributes="None"
+                            TextColor="#d4d4d4" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="10,0,10,0"/>
+            <Entry  Grid.Row="5" x:Name="entry_phone"  Placeholder="10 0000 0000"  Keyboard="Telephone"  PlaceholderColor="#b0b0b0"  TextColor="#b0b0b0" BackgroundColor="#252a2a"  Margin="10,0,10,0" HorizontalOptions="FillAndExpand" 
+                             VerticalOptions="Start" >
+                <Entry.PlaceholderColor>
+                    <OnPlatform x:TypeArguments="Color">
+                        <On Platform="iOS" Value="#b0b0b0"></On>
+                        <On Platform="Android" Value="#b0b0b0"></On>
+                    </OnPlatform>
+                </Entry.PlaceholderColor>
+            </Entry>
+            <Label    Grid.Row="6"  Text ="Gender" FontSize="16" FontAttributes="None"
+                            TextColor="#d4d4d4" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="10,0,10,0"/>
+            <Grid Grid.Row="7" Margin="10,0,10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.50*"/>
+                    <ColumnDefinition Width="0.50*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" BackgroundColor="#252a2a"  Text="Male" TextColor="#ff907e" BorderColor="#ff907e"  BorderWidth="0.5"/>
+                <Button Grid.Column="1" BackgroundColor="#252a2a"  Text="Female" TextColor="#ff907e" BorderColor="#ff907e"  BorderWidth="0.5" />
+            </Grid>
+            <Label    Grid.Row="8"  Text ="Date of Birth" FontSize="16" FontAttributes="None"
+                            TextColor="#d4d4d4" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="10,0,10,0"/>
+            <Grid Grid.Row="9" Margin="10,0,10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*"/>
+                    <ColumnDefinition Width="0.33*"/>
+                    <ColumnDefinition Width="0.33*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Text="Day" TextColor="#b0b0b0" BackgroundColor="#252a2a"  FontSize="16" HorizontalTextAlignment="Start" Padding="10,0,0,0"/>
+                <Picker   Grid.Column="0" BackgroundColor="Transparent" TextColor="#b0b0b0"  />
+                <Label Grid.Column="1" Text="Month" TextColor="#b0b0b0" BackgroundColor="#252a2a"  FontSize="16" HorizontalTextAlignment="Start" Padding="10,0,0,0"/>
+                <Picker Grid.Column="1" BackgroundColor="#Transparent" TextColor="#b0b0b0" />
+                <Label Grid.Column="2" Text="Year" TextColor="#b0b0b0" BackgroundColor="#252a2a"  FontSize="16" HorizontalTextAlignment="Start" Padding="10,0,0,0"/>
+                <Picker Grid.Column="2" BackgroundColor="#Transparent" TextColor="#b0b0b0" />
+            </Grid>-->
+            <!--<Button Grid.Row="12" Grid.Column="0" Text="Languages" TextColor="#d4d4d4"  FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a" Margin="10,0,0,0" HorizontalOptions="Start" VerticalOptions="Center" />-->
+            <!--</ListView>-->
+          
+            <Button Grid.Row="13" Text="Finish"  TextColor="#eeeeee" BackgroundColor="#eb2027" CornerRadius="5" Margin="10,0,10,0" Clicked="Button_Clicked"/>
+            <Label    Grid.Row="14" Text ="Skip" FontSize="12" FontAttributes="None" TextDecorations="Underline"
+                            TextColor="#0a8db1" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="almentor.Views.Login1Fingerprint">
+    <ContentPage.Content>
+        <Grid Background="#141717" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.20*" />
+                <RowDefinition Height="0.14*" />
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.12*"/>
+                <RowDefinition Height="0.12*"/>
+                <RowDefinition Height="0.14*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.07*" />
+                <RowDefinition Height="0.14*" />
+                <RowDefinition Height="0.10*" />
+            </Grid.RowDefinitions>
+            <Image Grid.Row="1" Source="almentoricon.png"/>
+            <Button Grid.Row="3" Text="Sign in with Facebook"  TextColor="#ffffff" BackgroundColor="#4267b2" CornerRadius="5" Margin="10,0,10,0" Clicked="Button_Clicked_3"/>
+            <Button Grid.Row="4" Text="Sign in with Google" TextColor="#ffffff" BackgroundColor="#ea4335" CornerRadius="5" Margin="10,0,10,0" Clicked="Button_Clicked_2"/>
+            <!--<Button Grid.Row="5" Text="Sign in with Apple" TextColor="#000000" BackgroundColor="#ffffff" CornerRadius="5" Margin="10,0,10,0" Clicked="Button_Clicked_1"/>-->
+            <Label   Grid.Row="5" Grid.RowSpan="2" Text ="OR" FontSize="16" FontAttributes="None"
+                       TextColor="#a1a1a1" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Grid Grid.Row="7">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.75*" />
+                    <ColumnDefinition Width="0.25*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Text="Login with your email" TextColor="#ffffff" BackgroundColor="#eb2027" CornerRadius="5" Margin="7.2,0,7.2,0" Clicked="btnloginwithyouremail_Clicked"/>
+                <Image Grid.Column="1" Source="fingerprint.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            </Grid>
+            <Label   Grid.Row="9" 
+                     BackgroundColor="#252a2a" 
+                     HeightRequest="1"
+                     HorizontalOptions="FillAndExpand" 
+                     VerticalOptions="Center"
+                    Margin="10,0,10,0" />
+            <Grid Grid.Row="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.70*" />
+                    <ColumnDefinition Width="0.30*" />
+                </Grid.ColumnDefinitions>
+                <Label   Grid.Column="0" Text =" Don't have an account?" FontSize="16" FontAttributes="None"
+                       TextColor="#d4d4d4" HorizontalOptions="End" VerticalOptions="Center"/>
+                <Button  Grid.Column="1"  Text="Signup" FontSize="16" TextColor="#0a8db1" BackgroundColor="Transparent" Margin="10,5,10,5" Clicked="btnsignupl_Clicked"   />
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

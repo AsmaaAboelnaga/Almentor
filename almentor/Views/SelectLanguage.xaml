@@ -1,0 +1,34 @@
+﻿<!--<?xml version="1.0" encoding="utf-8" ?>-->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="almentor.Views.SelectLanguage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#141717">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.141*"/>
+                <RowDefinition Height="0.096*"/>
+                <RowDefinition Height="0.147*"/>
+                <RowDefinition Height="0.031*"/>
+                <RowDefinition Height="0.06*"/>
+                <RowDefinition Height="0.312*"/>
+                <RowDefinition Height="0.072*"/>
+                <RowDefinition Height="0.093*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="1" Source="almentoricon.png"/>
+            <Label   Grid.Row="3"  Text =" Select Language" FontSize="16" FontAttributes="None" 
+                       TextColor="#d4d4d4" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Grid Grid.Row="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.50*" />
+                    <ColumnDefinition Width="0.50*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="1" Grid.Column="0" Text="English" TextColor="#d4d4d4"  FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a" Margin="7.5,0,0,0" Clicked="Button_Clicked"/>
+                <Button Grid.Row="1" Grid.Column="1" Text="العربية" TextColor="#d4d4d4" FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a" Margin="4.3,0,7.2,0"   />
+            </Grid>
+            <Button Grid.Row="7" Text="Continue" BackgroundColor="#eb2027" CornerRadius="5" Margin="4.3,0,4.3,0"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

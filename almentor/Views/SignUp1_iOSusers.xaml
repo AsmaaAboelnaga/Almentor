@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="almentor.Views.SignUp1_iOSusers">
+    <ContentPage.Content>
+        <Grid Background="#141717" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.20*" />
+                <RowDefinition Height="0.14*" />
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.12*"/>
+                <RowDefinition Height="0.12*"/>
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.07*" />
+                <RowDefinition Height="0.14*" />
+                <RowDefinition Height="0.10*" />
+            </Grid.RowDefinitions>
+            <Image Grid.Row="1" Source="almentoricon.png"/>
+            <Button Grid.Row="3" Text="Sign up with Facebook"  TextColor="#ffffff" BackgroundColor="#4267b2" CornerRadius="5" Margin="10,0,10,0" Clicked="Button_Clicked"/>
+            <Button Grid.Row="4" Text="Sign up with Google" TextColor="#ffffff" BackgroundColor="#ea4335" CornerRadius="5" Margin="10,0,10,0" Clicked="Button_Clicked_1"/>
+            <Button Grid.Row="5" Text="Sign in with Apple" TextColor="#000000" BackgroundColor="#ffffff" CornerRadius="5" Margin="10,0,10,0" Clicked="Button_Clicked_2"/>
+            <Grid Grid.Row="6" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width ="0.10*"/>
+                    <ColumnDefinition  Width ="0.20*"/>
+                    <ColumnDefinition  Width ="0.04*"/>
+                    <ColumnDefinition  Width ="0.20*"/>
+                    <ColumnDefinition  Width ="0.10*"/>
+                </Grid.ColumnDefinitions>
+                <Label     Grid.Column="1" BackgroundColor="#707070"    HeightRequest="1" WidthRequest="30"
+                         HorizontalOptions="End"  VerticalOptions="Center"   Margin="10,0,10,0" />
+                <Label    Grid.Column="2"   Text ="OR" FontSize="16" FontAttributes="None"
+                       TextColor="#a1a1a1" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label     Grid.Column="3" BackgroundColor="#707070"    HeightRequest="1" WidthRequest="30"
+                         HorizontalOptions="Start"  VerticalOptions="Center"   Margin="10,0,10,0" />
+            </Grid>
+            <Button Grid.Row="7" Text="Sign up with your email" TextColor="#ffffff"  BorderColor="White" BorderWidth="0.5" BackgroundColor="Transparent" CornerRadius="5" Margin="10,0,10,0" Clicked="Button_Clicked_3"/>
+            <Grid Grid.Row="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width ="0.05*"/>
+                    <ColumnDefinition  Width ="0.55*"/>
+                    <ColumnDefinition  Width ="0.35*"/>
+                    <ColumnDefinition  Width ="0.05*"/>
+                </Grid.ColumnDefinitions>
+                <Label     Grid.Column="1" Text ="By signing up you agree to our" FontSize="12" FontAttributes="None"
+                            TextColor="#a1a1a1"   Margin="10,0,10,0"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                <Label     Grid.Column="2" Text = "Terms Conditions" FontSize="12" FontAttributes="None" TextDecorations="Underline"
+                            TextColor="#0a8db1"   Margin="10,0,10,0"  HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
+            </Grid>
+
+            <Label   Grid.Row="9"
+                     BackgroundColor="#252a2a" 
+                     HeightRequest="1"
+                     HorizontalOptions="FillAndExpand" 
+                     VerticalOptions="Center"
+                    Margin="10,0,10,0" />
+
+            <Grid Grid.Row="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.10*" />
+                    <ColumnDefinition Width="0.40*" />
+                    <ColumnDefinition Width="0.15*" />
+                    <ColumnDefinition Width="0.05*" />
+                </Grid.ColumnDefinitions>
+                <Label   Grid.Column="1" Text ="Already have an account?" FontSize="16" FontAttributes="None" Padding="0,0,0,0"
+                       TextColor="#d4d4d4" HorizontalOptions="Start" VerticalOptions="Center"/>
+                <Button  Grid.Column="2"  Text="Login" FontSize="16" TextColor="#0a8db1" BackgroundColor="Transparent" Clicked="btnlogin_Clicked" 
+                         VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

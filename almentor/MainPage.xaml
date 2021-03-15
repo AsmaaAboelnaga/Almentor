@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="almentor.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Content>
+        <!--<Grid BackgroundColor="#141717">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.141*"/>
+                <RowDefinition Height="0.096*"/>
+                <RowDefinition Height="0.147*"/>
+                <RowDefinition Height="0.031*"/>
+                <RowDefinition Height="0.06*"/>
+                <RowDefinition Height="0.312*"/>
+                <RowDefinition Height="0.072*"/>
+                <RowDefinition Height="0.093*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="1" Source="almentoricon.png"/>
+            <Label   Grid.Row="3"  Text =" Select Language" FontSize="16" FontAttributes="None" 
+                       TextColor="#d4d4d4" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Grid Grid.Row="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.50*" />
+                    <ColumnDefinition Width="0.50*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="1" Grid.Column="0" Text="English" TextColor="#d4d4d4"  FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a" Margin="7.5,0,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                <Button Grid.Row="1" Grid.Column="1" Text="العربية" TextColor="#d4d4d4" FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a" Margin="4.3,0,7.2,0"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            </Grid>
+            <Button Grid.Row="7" Text="Continue" BackgroundColor="#eb2027" CornerRadius="5" Margin="4.3,0,4.3,0"
+                    Clicked="Button_Clicked"/>
+        </Grid>-->
+
+
+        <Grid Background="#141717" >
+            <!--<Grid.RowDefinitions>
+                <RowDefinition Height="0.20*" />
+                <RowDefinition Height="0.14*" />
+                <RowDefinition Height="0.10*" />
+                
+                <RowDefinition Height="0.14*" />
+                <RowDefinition Height="0.14*"/>
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.10*" />
+            </Grid.RowDefinitions>-->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.20*" />
+                <RowDefinition Height="0.14*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.04*"/>
+                <RowDefinition Height="0.12*"/>
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.07*" />
+                <RowDefinition Height="0.10*" />
+            </Grid.RowDefinitions>
+            <Image Grid.Row="1" Source="almentoricon.png"/>
+            <Label   Grid.Row="3" Text =" Select Language" FontSize="16" FontAttributes="None" 
+                       TextColor="#d4d4d4" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Grid Grid.Row="5">
+                <!--<Grid.RowDefinitions>
+                    <RowDefinition Height="0.60*" />
+                    <RowDefinition Height="0.40*" />
+                </Grid.RowDefinitions>-->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.50*" />
+                    <ColumnDefinition Width="0.50*" />
+                </Grid.ColumnDefinitions>
+                <!--<Label   Grid.Row="0" Grid.ColumnSpan="2" Text =" Select Language" FontSize="16" FontAttributes="None" 
+                       TextColor="#d4d4d4" HorizontalOptions="Center" VerticalOptions="Center"/>-->
+                <Button Grid.Row="0" Grid.Column="0" Text="English" TextColor="#d4d4d4"  FontSize="14" CornerRadius="20" BackgroundColor="#252a2a" Margin="20,0,5,0"  HorizontalOptions="FillAndExpand" VerticalOptions="Center" Clicked="btnonboardingenglish_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="العربية" TextColor="#d4d4d4" FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a" Margin="5,0,20,0" HorizontalOptions="FillAndExpand" VerticalOptions="Center"  />
+            </Grid>
+            <Button Grid.Row="9" Text="Continue"  TextColor="#eeeeee" BackgroundColor="#eb2027" CornerRadius="5" Margin="10,0,10,0" Clicked="btnContinue_Clicked"/>
+        </Grid>
+        <!--<Grid Background="#141717" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.20*" />
+                <RowDefinition Height="0.14*" />
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.12*"/>
+                <RowDefinition Height="0.12*"/>
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.12*" />
+                <RowDefinition Height="0.10*" />
+                <RowDefinition Height="0.07*" />
+                <RowDefinition Height="0.14*" />
+                <RowDefinition Height="0.10*" />
+            </Grid.RowDefinitions>
+            
+            <Image Grid.Row="1" Source="almentoricon.png"/>
+            <Label   Grid.Row="3"  Text =" Select Language" FontSize="16" FontAttributes="None" 
+                       TextColor="#d4d4d4" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Grid Grid.Row="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.60*" />
+                <RowDefinition Height="0.40*" />
+            </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.50*" />
+                    <ColumnDefinition Width="0.50*" />
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="1" Grid.Column="0" Text="English" TextColor="#d4d4d4"  FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a" Margin="15,0,5,0" />
+            <Button Grid.Row="1" Grid.Column="1" Text="العربية" TextColor="#d4d4d4" FontSize=" 14" CornerRadius="20" BackgroundColor="#252a2a" Margin="5,0,15,0"   />
+        </Grid>
+        <Button Grid.Row="5" Text="Continue"  TextColor="#eeeeee" BackgroundColor="#eb2027" CornerRadius="5" Margin="10,10,10,10" Clicked="Button_Clicked"/>
+        </Grid>-->
+    
+
+    </ContentPage.Content>
+
+</ContentPage>

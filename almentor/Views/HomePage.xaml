@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="almentor.Views.HomePage"
+           xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            android:TabbedPage.ToolbarPlacement="Bottom" BarBackgroundColor="#141717" BarTextColor="#535555"   SelectedTabColor="#ff907e" UnselectedTabColor="#535555">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Home" IconImageSource="playerlogoalmentorlight.png">
+        <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Start">
+            <ScrollView >
+                <Grid Background="#0c0e0e" HorizontalOptions="Start">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.06*"/>
+                        <RowDefinition Height="0.0*"/>
+                        <RowDefinition Height="0.05*"/>
+                        <RowDefinition Height="0.05*"/>
+                        <RowDefinition Height="0.05*"/>
+                        <RowDefinition Height="0.05*"/>
+                        <RowDefinition Height="0.05*"/>
+                        <RowDefinition Height="0.05*"/>
+                        <RowDefinition Height="0.05*"/>
+                        <RowDefinition Height="0.05*"/>
+                        <RowDefinition Height="0.05*"/>
+                        <RowDefinition Height="0.05*"/>
+                        <RowDefinition Height="0.05*"/>
+                        <RowDefinition Height="0.05*"/>
+                        <RowDefinition Height="0.05*"/>
+                        <RowDefinition Height="0.05*"/>
+                        <RowDefinition Height="0.05*"/>
+                        <RowDefinition Height="0.05*"/>
+                    </Grid.RowDefinitions>
+                    <!--<RowDefinition Height="0.05*" />
+                        <RowDefinition Height="0.02*" />
+                        <RowDefinition Height="0.07*" />
+                        <RowDefinition Height="0.07*" />
+                        <RowDefinition Height="0.07*"/>
+                        <RowDefinition Height="0.07*"/>
+                        <RowDefinition Height="0.07*" />
+                        <RowDefinition Height="0.07*" />
+                        <RowDefinition Height="0.07*" />
+                        <RowDefinition Height="0.07*" />
+                        <RowDefinition Height="0.07*" />
+                        <RowDefinition Height="0.07*" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.60*"/>
+                            <RowDefinition Height="0.40*"/>
+                        </Grid.RowDefinitions>-->
+                    <Image Grid.Row="0"   Source="hhom.png"  HorizontalOptions="End" VerticalOptions="StartAndExpand"  Aspect="AspectFill" Margin="0,10,0,0"/>
+                    <Frame Grid.Row="1" CornerRadius="5" BackgroundColor="#141717" Margin="10,0,10,10">
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.30*"/>
+                                <RowDefinition Height="0.10*"/>
+                            </Grid.RowDefinitions>
+                            <Label  Grid.Row="2" Text="Learning is not attained by chance, it must be sought for with ardor and attended to with diligence."   TextColor="#eeeeee" BackgroundColor="Transparent" Padding="0"/>
+                            <Label  Grid.Row="3" Text="Abigail Adams"  TextColor="#a1a1a1" BackgroundColor="Transparent"  VerticalOptions="Start" HorizontalOptions="EndAndExpand" Padding="0"/>
+                        </Grid>
+                    </Frame>
+                    <!--  </Grid>-->
+                    <!--<Grid Grid.Row="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.30*" />
+                            <RowDefinition Height="0.70*" />
+                        </Grid.RowDefinitions>-->
+                    <Label    Grid.Row="2" Text ="Recommended For You" FontSize="24" FontAttributes="None" 
+                            TextColor="#eeeeee" HorizontalOptions="Start" VerticalOptions="StartAndExpand" Margin="10,0,0,0" Padding="0" />
+                    <ScrollView Grid.Row="3" Orientation="Horizontal"  VerticalScrollBarVisibility="Never" HorizontalOptions="Start" VerticalOptions="StartAndExpand" Margin="10,0,10,0"
+                                HorizontalScrollBarVisibility="Never">
+                        <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding UserCollection}"  HorizontalOptions="Start" VerticalOptions="Start">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout  Orientation="Vertical" Spacing="15" VerticalOptions="Start" HorizontalOptions="Center" >
+                                        <Frame  HasShadow="False" CornerRadius="10"  HeightRequest="170" WidthRequest="80" HorizontalOptions="Start" VerticalOptions="Start">
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="0.70*"/>
+                                                    <RowDefinition Height="0.30*"/>
+                                                </Grid.RowDefinitions>
+                                                <Image Grid.Row="0"   Source="{Binding UserImage}" Aspect="AspectFit" HorizontalOptions="Start" VerticalOptions="EndAndExpand"/>
+                                                <Label Grid.Row="1" Text="{Binding Title}" TextColor="#eeeeee" FontAttributes="Bold" FontSize="12"  BackgroundColor="#141717" HorizontalOptions="Fill" VerticalOptions="FillAndExpand"/>
+                                            </Grid>
+                                        </Frame>
+                                    </StackLayout>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </StackLayout>
+                    </ScrollView>
+                    <!-- </Grid>
+
+                 <Grid Grid.Row="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.30*" />
+                            <RowDefinition Height="0.70*" />
+                        </Grid.RowDefinitions>-->
+                        <Label    Grid.Row="4" Text ="Popular Courses" FontSize="24" FontAttributes="None"
+                            TextColor="#eeeeee" HorizontalOptions="Start" VerticalOptions="StartAndExpand"  Margin="10,0,0,0" Padding="0" />
+                        <ScrollView Grid.Row="5" Orientation="Horizontal"  VerticalScrollBarVisibility="Never" HorizontalOptions="End" VerticalOptions="StartAndExpand" Margin="10,0,10,0"
+                                HorizontalScrollBarVisibility="Never">
+                            <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding UserCollection}"  HorizontalOptions="Start" VerticalOptions="Start">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackLayout  Orientation="Vertical" Spacing="15" VerticalOptions="Start" HorizontalOptions="Center" >
+                                            <Frame  HasShadow="False" CornerRadius="10"  HeightRequest="170" WidthRequest="110" HorizontalOptions="Start" VerticalOptions="Start">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="0.70*"/>
+                                                        <RowDefinition Height="0.30*"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Image Grid.Row="0"   Source="{Binding UserImage}" Aspect="AspectFit" HorizontalOptions="Start" VerticalOptions="EndAndExpand"/>
+                                                    <Label Grid.Row="1" Text="{Binding Title}" TextColor="#eeeeee" FontAttributes="Bold" FontSize="12"  BackgroundColor="#141717"/>
+                                                </Grid>
+                                            </Frame>
+                                        </StackLayout>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </StackLayout>
+                        </ScrollView>
+                <!-- </Grid>
+                    <Grid Grid.Row="4">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.30*" />
+                            <RowDefinition Height="0.70*" />
+                        </Grid.RowDefinitions>-->
+                        <Label    Grid.Row="6" Text ="Offers" FontSize="24" FontAttributes="None"
+                            TextColor="#eeeeee" HorizontalOptions="Fill" VerticalOptions="Start" Margin="10,0,10,0" />
+                        <ScrollView Grid.Row="7" Orientation="Horizontal"  VerticalScrollBarVisibility="Never" HorizontalOptions="End" VerticalOptions="StartAndExpand" Margin="10,0,10,0"
+                                HorizontalScrollBarVisibility="Never">
+                            <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding UserCollection}"  HorizontalOptions="Start" VerticalOptions="Start">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackLayout  Orientation="Vertical" Spacing="15" VerticalOptions="Start" HorizontalOptions="Center" >
+                                            <Frame  HasShadow="False" CornerRadius="10" HeightRequest="100" WidthRequest="200" HorizontalOptions="Start" VerticalOptions="Start">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="0.70*"/>
+                                                        <RowDefinition Height="0.30*"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Image Grid.Row="0"   Source="{Binding UserImage}" Aspect="AspectFit" HorizontalOptions="Start" VerticalOptions="EndAndExpand"/>
+                                                    <Label Grid.Row="1" Text="{Binding Title}" TextColor="#eeeeee" FontAttributes="Bold" FontSize="12"  BackgroundColor="#141717"/>
+                                                </Grid>
+                                            </Frame>
+                                        </StackLayout>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </StackLayout>
+                        </ScrollView>
+                    <!--</Grid>-->
+                    <StackLayout Grid.Row="8"  Orientation="Vertical" Spacing="15" VerticalOptions="Start" HorizontalOptions="Center"  BackgroundColor="#0a8db1">
+                        <Frame   HasShadow="False" CornerRadius="10" HeightRequest="170" WidthRequest="300"  HorizontalOptions="Start" VerticalOptions="Start">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="0.33*"/>
+                                    <RowDefinition Height="0.33*"/>
+                                    <RowDefinition Height="0.33*"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0" Text="What Topics Interest You More!" TextColor="#ffffff" FontAttributes="Bold" FontSize="12"  BackgroundColor="#141717"/>
+                                <Label Grid.Row="1" Text="Pick whatever interests you from the selected topics, and we would show you courses related to those fields." TextColor="#d4d4d4" FontAttributes="Bold" FontSize="12"  BackgroundColor="#141717"/>
+                                <Button  Grid.Row="2" Text="Set Your Interests" TextColor="#ffffff" />
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                <StackLayout Grid.Row="9"  Orientation="Vertical" Spacing="15" VerticalOptions="Start" HorizontalOptions="Center" BackgroundColor="#0b2a32">
+                    <Frame   HasShadow="False" CornerRadius="10" HeightRequest="170" WidthRequest="300"  HorizontalOptions="Start" VerticalOptions="Start">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.70*"/>
+                                <RowDefinition Height="0.30*"/>
+                            </Grid.RowDefinitions>
+                            <Image Grid.Row="0"   Source="{Binding UserImage}" Aspect="AspectFit" HorizontalOptions="Start" VerticalOptions="EndAndExpand"/>
+                            <Label Grid.Row="1" Text="{Binding Title}" TextColor="#eeeeee" FontAttributes="Bold" FontSize="12"  BackgroundColor="#141717"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <!-- <Grid Grid.Row="7">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.30*" />
+                            <RowDefinition Height="0.70*" />
+                        </Grid.RowDefinitions>-->
+                        <Label    Grid.Row="10" Text ="Pick of Today" FontSize="24" FontAttributes="None"
+                            TextColor="#eeeeee" HorizontalOptions="Fill" VerticalOptions="Start" Margin="10,0,10,0" />
+                        <ScrollView Grid.Row="11" Orientation="Horizontal"  VerticalScrollBarVisibility="Never" HorizontalOptions="End" VerticalOptions="StartAndExpand" Margin="10,0,10,0"
+                                HorizontalScrollBarVisibility="Never">
+                            <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding UserCollection}"  HorizontalOptions="Start" VerticalOptions="Start">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackLayout  Orientation="Vertical" Spacing="15" VerticalOptions="Start" HorizontalOptions="Center" >
+                                            <Frame  HasShadow="False" CornerRadius="10" HeightRequest="170" WidthRequest="300" HorizontalOptions="Start" VerticalOptions="Start">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="0.70*"/>
+                                                        <RowDefinition Height="0.30*"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Image Grid.Row="0"   Source="{Binding UserImage}" Aspect="AspectFit" HorizontalOptions="Start" VerticalOptions="EndAndExpand"/>
+                                                    <Label Grid.Row="1" Text="{Binding Title}" TextColor="#eeeeee" FontAttributes="Bold" FontSize="12"  BackgroundColor="#141717"/>
+                                                </Grid>
+                                            </Frame>
+                                        </StackLayout>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </StackLayout>
+                        </ScrollView>
+                    <!-- </Grid>-->
+
+                    <!--<Grid Grid.Row="8">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.30*" />
+                            <RowDefinition Height="0.70*" />
+                        </Grid.RowDefinitions>-->
+                        <Label    Grid.Row="12" Text ="New Courses" FontSize="24" FontAttributes="None"
+                            TextColor="#eeeeee" HorizontalOptions="Fill" VerticalOptions="Start" Margin="10,0,10,0" />
+                        <ScrollView Grid.Row="13" Orientation="Horizontal"  VerticalScrollBarVisibility="Never" HorizontalOptions="End" VerticalOptions="StartAndExpand" Margin="10,0,10,0"
+                                HorizontalScrollBarVisibility="Never">
+                            <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding UserCollection}"  HorizontalOptions="Start" VerticalOptions="Start">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackLayout  Orientation="Vertical" Spacing="15" VerticalOptions="Start" HorizontalOptions="Center" >
+                                            <Frame  HasShadow="False" CornerRadius="10"  HeightRequest="170" WidthRequest="110" HorizontalOptions="Start" VerticalOptions="Start">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="0.70*"/>
+                                                        <RowDefinition Height="0.30*"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Image Grid.Row="0"   Source="{Binding UserImage}" Aspect="AspectFit" HorizontalOptions="Start" VerticalOptions="EndAndExpand"/>
+                                                    <Label Grid.Row="1" Text="{Binding Title}" TextColor="#eeeeee" FontAttributes="Bold" FontSize="12"  BackgroundColor="#141717"/>
+                                                </Grid>
+                                            </Frame>
+                                        </StackLayout>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </StackLayout>
+                        </ScrollView>
+                    <!-- </Grid>-->
+                    <StackLayout Grid.Row="14"  Orientation="Vertical" Spacing="15" VerticalOptions="Start" HorizontalOptions="Center" >
+                        <Frame   HasShadow="False" CornerRadius="10" HeightRequest="170" WidthRequest="300"  HorizontalOptions="Start" VerticalOptions="Start">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="0.70*"/>
+                                    <RowDefinition Height="0.30*"/>
+                                </Grid.RowDefinitions>
+                                <Image Grid.Row="0"   Source="{Binding UserImage}" Aspect="AspectFit" HorizontalOptions="Start" VerticalOptions="EndAndExpand"/>
+                                <Label Grid.Row="1" Text="{Binding Title}" TextColor="#eeeeee" FontAttributes="Bold" FontSize="12"  BackgroundColor="#141717"/>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                     <!--<Grid Grid.Row="15">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.30*" />
+                            <RowDefinition Height="0.70*" />
+                        </Grid.RowDefinitions>-->
+                    <!--<Label    Grid.Row="15" Text ="Recently Viewed" FontSize="24" FontAttributes="None"
+                            TextColor="#eeeeee" HorizontalOptions="Fill" VerticalOptions="Start" Margin="10,0,10,0" />
+                        <ScrollView Grid.Row="16" Orientation="Horizontal"  VerticalScrollBarVisibility="Never" HorizontalOptions="End" VerticalOptions="StartAndExpand" Margin="10,0,10,0"
+                                HorizontalScrollBarVisibility="Never">
+                            <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding UserCollection}"  HorizontalOptions="Start" VerticalOptions="Start">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate>
+                                    <StackLayout  Orientation="Vertical" Spacing="15" VerticalOptions="Start" HorizontalOptions="Center" >
+                                        <Frame  HasShadow="False" CornerRadius="10"  HeightRequest="160" WidthRequest="110" HorizontalOptions="Start" VerticalOptions="Start">
+                                            <Image   Source="home.png" Aspect="Fill" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
+                                        </Frame>
+                                    </StackLayout>
+
+                                    <Grid>
+                                                    <Grid.RowDefinitions>
+                                                    <RowDefinition Height="0.40*"/>
+                                                    <RowDefinition Height="0.30*"/>
+                                                    <RowDefinition Height="0.15*"/>
+                                                    <RowDefinition Height="0.15*"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Image Grid.Row="0"   Grid.RowSpan="4"  Source="home.png" Aspect="Fill" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
+                                                    <Label Grid.Row="1" Text="Unlock Premium Courses" TextColor="#eeeeee"  Background="Transperant" FontAttributes="Bold"    FontSize="24"/>
+                                                    <Label  Grid.Row="2" Text="With unlimited access to all courses" TextColor="#eeeeee"  Background="Transperant" FontAttributes="Bold"    FontSize="12"/>
+                                                    <Button Grid.Row="3"  Text="Subscribe Now" BackgroundColor="#eb2027"  CornerRadius="5" HorizontalOptions="Start" VerticalOptions="End" FontSize="16"/>
+                                                </Grid>-->
+                                            <!--
+                                            </Frame>
+                                        </StackLayout>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </StackLayout>
+                        </ScrollView>
+                    </Grid>
+                    <StackLayout Grid.Row="11"  Orientation="Vertical" Spacing="15" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" >
+                        <Image     Source="home.png" Aspect="Fill" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
+
+                        <Frame   HasShadow="False" CornerRadius="10" HeightRequest="160" WidthRequest="300"  HorizontalOptions="Start" VerticalOptions="Start">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="0.40*"/>
+                                    <RowDefinition Height="0.30*"/>
+                                    <RowDefinition Height="015*"/>
+                                    <RowDefinition Height="0.15*"/>
+                                </Grid.RowDefinitions>
+                              
+                    <Image Grid.Row="0"     Source="home.png" Aspect="Fill" HorizontalOptions="Start" VerticalOptions="StartAndExpand"/>
+                    <Label Grid.Row="1" Text="Meet a group of high profile professionals" TextColor="#0c0e0e" FontAttributes="Bold"    FontSize="24" />
+                                <Button Grid.Row="3"  Text="Meet the Mentors" BackgroundColor="#eb2027"  CornerRadius="5" HorizontalOptions="Start" VerticalOptions="End" FontSize="16"/>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>  -->
+                    
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Search" IconImageSource="playerlogoalmentorlight.png"/>
+    <ContentPage Title="Learn" IconImageSource="playerlogoalmentorlight.png"/>
+    <ContentPage Title="Inbox" IconImageSource="playerlogoalmentorlight.png"/>
+    <ContentPage Title="Profile" IconImageSource="playerlogoalmentorlight.png"/>
+</TabbedPage>
